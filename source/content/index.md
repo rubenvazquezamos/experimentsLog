@@ -1,13 +1,7 @@
 ---
-title: My GitHub Pages Notebook!
+title: Experiments Log
 ---
 
-Hello world!
-
-Write some words here!
-
-making change to push
-
-
+This website serves as a way to document what experiments have been carried out and to showcase some key experimental results. It will be incrementally updated as new experimental data is obtained. See below for the first set of experiments:
 
 [[Factors affecting the diffusion coefficient of Schroeder diffusers]]
