@@ -95,7 +95,7 @@ Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot i
 Swapped impedance BCs with cartesian PMLs. Compared with results using different simulation boundary conditions:
 
 > [!Plot]-
->  ![[comparison.svg]]
+> ![[comparison.svg]]
 
 `Experiments/flatPanelFarField`
 Numerical flat panel scattering as a function of domain size. Probe is 1m from domain edge at all times to avoid interference from PMLs. Panel length is approx. $1.9$ m:
