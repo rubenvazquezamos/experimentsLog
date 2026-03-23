@@ -1,7 +1,7 @@
 Investigation with particular focus on $N=5$ QRD and the sometimes quite drastic disagreement between numerical and analytical (TMM) modelling predictions of the diffusion coefficient performance. Other quantities include the phase at the well surface and the polar distribution of scattered acoustic pressure.
 
 **Hypothesis:** The discrepancy at 1k is actually caused by *lack of periodicity*. More specifically by the wells at the edge not having another well to interact with (we might call this "pseudo-periodicity").
-**Conclusion:** this doesn't seem to be the case! See this experiment about the [effect of panel repetitions on the diffusion coefficent](###paramRepsQRD5). It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
+**Conclusion:** this doesn't seem to be the case! See the experiment `paramRepsQRD5` about the effect of panel repetitions on the diffusion coefficient. It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
 
 # Experiments
 
@@ -73,7 +73,7 @@ The effect of adding 6 panel repetitions on the scattered pressure at the design
 > [!Plot]-
 > ![[polar.svg]]
 
-### paramRepsQRD5
+`paramRepsQRD5`
 
 This experiment studies the effect panel repetitions ($1, 2, 3, 4, 5, 6$) on the normalised diffusion coefficient $\delta_n$. The simulation probe was in the far field at all times, according to the criterion that the observer should be at a distance at least 3 times greater than the largest wavelength of interest and 3 times larger than the size of the panel. The simulation domain size starts at 3m, with care was taken to make the sure the was domain was at least 3x bigger than the panel size and the largest wavelength of interest:
 
