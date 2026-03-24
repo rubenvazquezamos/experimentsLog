@@ -6,4 +6,6 @@ This website serves as a way to document what experiments have been carried out 
 
 [[Factors affecting the diffusion coefficient of Schroeder diffusers]]
 
+[[QRD QRM comparison]]
+
 &copy; Rubén Vázquez Amos 2026 All Rights Reserved

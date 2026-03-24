@@ -102,7 +102,3 @@ Numerical flat panel scattering as a function of domain size. Probe is 1m from d
 
 > [!Plot]-
 > ![[polarAsFunctionofDomainSize 1.svg]]
-
-
-
-© Rubén Vázquez Amos 2026 All Rights Reserved
