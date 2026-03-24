@@ -28,7 +28,7 @@ Next, the researcher attempted a general replication of the TMM $\delta$ , compa
 > ![[QR5_DC_TMM3.svg]]
 
 `DC_factors2`
-A further [existing result]( (https://ericballestero.github.io/acoustic_metamaterials.html) ) from was added to the comparison and perfect agreement reached:
+A further [existing result](https://ericballestero.github.io/acoustic_metamaterials.html) from was added to the comparison and perfect agreement reached:
 
 > [!Plots]-
 > ![[TMM3&EricWeb.svg]]
