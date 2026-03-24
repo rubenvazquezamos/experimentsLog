@@ -19,16 +19,17 @@ What areas are under active investigation?
 - [x] Add information and plots for `PhaseProbeQRM5_2`
 
 - [x] Try defining $d = l_c + l_n + h$ or  $d = l_c + l_n$. This is used in the correction for a periodic array of slits given in [[@mechelFormulasAcoustics2013]].
-  
+
 # Experiments
-  
+
 ## Phase at diffuser surface
-  
+
 `PhaseProbeQRM5` 
 Experimented with surface probe distance from QRM after identifying error in `mphinterp()` call. It was calling `acpr.p_t` (total pressure) instead of `acpr.p_s` (scattered pressure). QRM has 12 mm width between wells ("fins") and 12 mm panel sides (stock) and QRD has 6 mm fins with 6 mm panel sides (stock).
-  
-  > [!Plot]-
-  > ![[Pasted image 20260309110704.png]]
+
+
+> [!Plot]-
+> ![[Pasted image 20260309110704.png]]
 
 `PhaseProbeQRM5_2`
 The surface probe experiment in `PhaseProbeQRM5` was repeated, this time with a different panel construction style and simulation domain - QRM has 6mm fins and 6mm stock and the QRD stayed the same with 6mm fins and 6mm stock. The simulation domain has Cartesian PMLs either side of the diffuser instead of impedance boundary conditions. Some distortions in the phase profile seem to have been mitigated with these adjustments.
