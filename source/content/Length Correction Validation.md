@@ -45,7 +45,6 @@ $$
 
 is the transfer matrix for the Helmholtz Resonator loaded in parallel in the waveguide and
 
-
 $$
 \mathbf{M_{\Delta l_{slit}}}= 
 \begin{bmatrix} 
@@ -70,32 +69,36 @@ Z_{HR}= - i Z_n
   \sin k_n l_n \cos k_c l_c -\frac{k_n \Delta l Z_n}{Z_c} \sin k_n l_n \sin k_c l_c + \frac{Z_n}{Z_c} \cos k_n l_n \sin k_c l_c
   }
 $$
-  
+
   where $Z_n = \sqrt{\beta_n / \rho_n}/S_n$ , $Z_c = \sqrt{\beta_c / \rho_c}/S_c$ are the effective acoustic impedances for the neck and waveguide expressed in flow formulation. The cross sections are defined as $S_n=w_n$ and $S_c = w_c$ for a system with 1D propagation. Lastly, the length correction is given as the sum of two smaller corrections $\Delta l = \Delta l_1+\Delta l_2$.
+
 $$
 \Delta l _{1} =0.82\bigg[ 1- 1.35 \frac{R_n}{R_c}+0.31\bigg( \frac{R_n}{R_c} \bigg)^3\bigg]R_n
 $$
 
 is the length correction due to a simple discontinuity from [[@kergomardSimpleDiscontinuitiesAcoustic1987,]]
-  
+
   $$
   \Delta l_2 = 0.82 
   \bigg[ 1-0.235\frac{R_n}{R_s}-1.32\bigg( \frac{R_n}{R_s}\bigg)^2+1.54 \bigg( \frac{R_n}{R_s}\bigg)^3-0.86\bigg(\frac{R_n}{R_s} \bigg)^4
   \bigg]R_n
   $$
-  
+
   is the length correction for a branch in a tube from [[@dubosTheorySoundPropagation1999]],
 
 $$\Delta l _{\mathrm{slit}} =0.82\bigg[ 1- 1.35 \frac{R_s}{R_t}+0.31\bigg( \frac{R_s}{R_t} \bigg)^3\bigg]R_s$$
 
 is the length correction due to the simple discontinuity between the slit and the main waveguide, where $R_c =w_c/2$, $R_n=w_n/2$ and $R_s=h/2$ $R_t=d/2$ is half the width of the main waveguide; $d = l_c+l_n + h$. Both types of correction are printed as in [[@theocharisLimitsSlowSound2014]]. Note that the factor $0.82$ in front of the expressions can appear as $0.41$ when the inputs are full widths as in [[@jimenezRainbowtrappingAbsorbersBroadband2017]]. The radiation impedance of the slit is given as 
+
 $$
 Z_{\Delta l_{\mathrm{slit}}} = 
 \frac{
 -i \omega \Delta l_{\mathrm{slit}} \rho_0
 }{
 \phi_t S_s
-}$$ 
+}
+$$
+
 Similar to [[@jimenezRainbowtrappingAbsorbersBroadband2017]], where the slit cross section is $S_s=h$ for a system with 1D propagation and the perforation ratio is $\phi_t = h/d$.
 
 ## COMSOL .mph model
