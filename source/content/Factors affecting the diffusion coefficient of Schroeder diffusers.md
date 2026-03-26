@@ -65,6 +65,13 @@ Negligible effects, most likely due to the change in overall panel length were o
 > [!Plot]-
 > ![[PolarFins1kHz.svg]]
 
+`QRD5fins`
+The effect of fin width on the diffusion coefficient of an $N=5$ QRD with 7cm well widths from 250Hz-4kHz was evaluated for two different fin widths: 0.5 and 12 mm. The thin fin panel had an overall width of 0.353 m and the fat fin panel an overall width of 0.422 m, which accounts for the difference in Fraunhofer TMM predictions for each panel (which don't feature fins), and probably for the slight change in numerical $\delta$ too. It's also notable to observe that the $\arg(R)$ presents hyperbolic divergence around the well edges for the thin well case but not for the fat case:
+
+> [!Plot]-
+> ![[DC 2.svg]]
+> ![[phase 1.svg]]
+
 ## Panel repetitions
 
 `6repsQRD5`
