@@ -71,6 +71,7 @@ The effect of fin width on the diffusion coefficient of an $N=5$ QRD with 7cm we
 > [!Plot]-
 > ![[DC 2.svg]]
 > ![[phase 1.svg]]
+> ![[polar2k.svg]]
 
 ## Panel repetitions
 
