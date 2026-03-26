@@ -101,7 +101,7 @@ $$
 
 Similar to [[@jimenezRainbowtrappingAbsorbersBroadband2017]], where the slit cross section is $S_s=h$ for a system with 1D propagation and the perforation ratio is $\phi_t = h/d$.
 
-## COMSOL .mph model
+## ## COMSOL .mph model
 
 COMSOL models have been made with a variety of waveguide configurations and formulations for the impedance $Z$ and reflection coefficient $R$. For an alternative model with propagation direction defined as $-y$ direction see [[resonator in waveguideBGFIELD5.mph]]. The model described here is `resonator in waveguideBGFIELD6.mph`. This model centers the slit in the waveguide and defines the propagation and waveguide axes as the $+x$ direction
 
@@ -109,18 +109,18 @@ COMSOL models have been made with a variety of waveguide configurations and form
 > ![[Pasted image 20260309134846.png]]
 > ![[Pasted image 20260309135139.png]]
 
-$Z_{spec} = p/v_y$ this impedance is different depending on where you position the point probe.
+$Z_{spec} = p/v_x$ this impedance is different depending on where you position the point probe.
 and therefore the reflection coefficient is $R = \frac{Z_{spec}-Z_0}{Z_{spec}+Z_0}$ 
 
 > [!Plot]-
 > ![[Pasted image 20260309135403.png]]
 
-This reflection coefficient is computed more directly as $R_1=\int p_{ref} \ dx/ \int p_{inc} \ dx$ , with the $y$ coordinate the input of the slit
+This reflection coefficient is computed more directly as $R_1=\int p_{ref} \ dy/ \int p_{inc} \ dy$ , with the $x$ coordinate a point near the input of the slit
 
 > [!Plot]-
 > ![[Pasted image 20260309135921.png]]
 
-$Z_1=\frac{\int p \ dx}{\int v_x \ dx}$ ,with the $y$ coordinate the input of the slit. The reflection coefficient is computed as $R_2 = \frac{Z_1-Z_0}{Z_1+Z_0}$ 
+$Z_1=\frac{\int p \ dy}{\int v_x \ dy}$ ,with the $x$ coordinate a point near the input of the slit. The reflection coefficient is computed as $R_2 = \frac{Z_1-Z_0}{Z_1+Z_0}$ 
 
 > [!Plot]-
 > ![[Pasted image 20260309135908.png]]
