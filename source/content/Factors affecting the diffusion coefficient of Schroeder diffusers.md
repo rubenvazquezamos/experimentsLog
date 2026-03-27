@@ -93,20 +93,26 @@ This experiment studies the effect panel repetitions ($1, 2, 3, 4, 5, 6$) on the
 
 ## Simulation domain considerations
 
-`Experiments/QRD5CartPML`
+`QRD5CartPML`
 Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot in [[@jimenezMetadiffusersDeepsubwavelengthSound2017]]
 
 > [!Plot]-
 > ![[Pasted image 20260313145757.png]]
 
-`Experiments/CartPML_full`
+`CartPML_full`
 Swapped impedance BCs with cartesian PMLs. Compared with results using different simulation boundary conditions:
 
 > [!Plot]-
 > ![[comparison.svg]]
 
-`Experiments/flatPanelFarField`
+`flatPanelFarField`
 Numerical flat panel scattering as a function of domain size. Probe is 1m from domain edge at all times to avoid interference from PMLs. Panel length is approx. $1.9$ m:
 
 > [!Plot]-
 > ![[polarAsFunctionofDomainSize 1.svg]]
+
+`flatPanelFarField_2`
+Same as above but with 50m domain size to check convergence to far field pattern.
+
+> [!Plot]-
+> ![[polarAsFunctionofDomainSize50m.svg]]
