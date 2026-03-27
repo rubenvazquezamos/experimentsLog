@@ -112,7 +112,7 @@ Numerical flat panel scattering as a function of domain size. Probe is 1m from d
 > ![[polarAsFunctionofDomainSize 1.svg]]
 
 `flatPanelFarField_2`
-Same as above but with 50m domain size to check convergence to far field pattern.
+Same as above but with 50m domain size to check convergence to far field pattern. Simulation for 50m domain took 72 minutes.
 
 > [!Plot]-
 > ![[polarAsFunctionofDomainSize50m.svg]]
