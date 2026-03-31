@@ -99,6 +99,16 @@ Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot i
 > [!Plot]-
 > ![[Pasted image 20260313145757.png]]
 
+
+
+`7repsPsHeatmap`
+Used 7 periods of QRD instead of 6 to compare like-for-like with [[@jimenezMetadiffusersDeepsubwavelengthSound2017]] (it seems 7 periods are being used in the paper).
+
+> [!Plot]-
+> ![[7repPsHeatmap.png]]
+
+
+
 `CartPML_full`
 Swapped impedance BCs with cartesian PMLs. Compared with results using different simulation boundary conditions. The effect on flat panel simulations was also considered and compared to TMM results. There are some differences at low frequencies.
 
