@@ -25,12 +25,14 @@
             "id": "2d8837e6263008e3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "31pts-5degRestrict.svg"
+                "file": "Factors affecting the diffusion coefficient of Schroeder diffusers.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "31pts-5degRestrict"
+              "icon": "lucide-file",
+              "title": "Factors affecting the diffusion coefficient of Schroeder diffusers"
             }
           }
         ],
@@ -91,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 403.49999618530273,
+    "collapsed": true
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -184,10 +187,13 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "QRD5RaylSommer_full_DC_comparison.svg",
+    "RSfarfield2_comparison.svg",
+    "Length Correction Validation.md",
+    "Factors affecting the diffusion coefficient of Schroeder diffusers.md",
+    "31pts-5degRestrict.svg",
     "N5-7-11-13_clean.svg",
     "index.md",
-    "Factors affecting the diffusion coefficient of Schroeder diffusers.md",
-    "Length Correction Validation.md",
     "category-folder/index.md",
     "category-folder/Some note.md",
     "category-folder"

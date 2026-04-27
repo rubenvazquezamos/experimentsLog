@@ -35,6 +35,11 @@ A further [existing result](https://ericballestero.github.io/acoustic_metamateri
 
 The TMM model was considered good enough for the time being.
 
+`QRD5RaylSommer_full`
+Diffusion coefficient using Rayleigh Sommerfeld integral formulation compared those obtained using Fraunhofer integral. Results are similar:
+>[!Plots]-
+>![[QRD5RaylSommer_full_DC_comparison.svg]]
+
 ## Agreement at 1kHz
 
 `1kQRDagree`
@@ -100,13 +105,11 @@ Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot i
 > ![[Pasted image 20260313145757.png]]
 
 
-
 `7repsPsHeatmap`
 Used 7 periods of QRD instead of 6 to compare like-for-like with [[@jimenezMetadiffusersDeepsubwavelengthSound2017]] (it seems 7 periods are being used in the paper).
 
 > [!Plot]-
 > ![[7repPsHeatmap.png]]
-
 
 
 `CartPML_full`
@@ -130,3 +133,8 @@ Same as above but with 50m domain size to check convergence to far field pattern
 
 > [!Plot]-
 > ![[polarAsFunctionofDomainSize50m.svg]]
+
+`RSfarfield2`
+TMM Flat panel scattering using Rayleigh Sommerfeld integral compared with far field formulation (Fraunhofer integral). Indicates that much of the changes in polar pattern with distance can be accounted for by using the right scattering integral.
+>[!Plot]-
+>![[RSfarfield2_comparison.svg]]
