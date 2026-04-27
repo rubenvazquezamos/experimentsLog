@@ -23,7 +23,7 @@ A number of hypotheses were considered with the overarching goal of explaining a
 
 **Hypothesis 5:** Fin width is distorting the scattered field. **Conclusion:** It isn't. See `QRD5fins`.
 
-**Hypothesis 6 evanescent coupling could be causing the issue. **Conclusion:** Nothing conclusive but see below a plot of sound intensity and pressure at 1kHz. It seems to show the field behaving as expected:
+**Hypothesis 6** evanescent coupling could be causing the issue. **Conclusion:** Nothing conclusive but see below a plot of sound intensity and pressure at 1kHz. It seems to show the field behaving as expected:
 >[!Plot]-
 >![[Evanescent Coupling Detection 1.jpeg]]
 
