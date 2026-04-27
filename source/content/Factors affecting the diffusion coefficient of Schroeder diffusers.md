@@ -1,11 +1,9 @@
 Investigation with particular focus on $N=5$ QRD and the sometimes quite drastic disagreement between numerical and analytical (TMM) modelling predictions of the diffusion coefficient performance. Other quantities include the phase at the well surface and the polar distribution of scattered acoustic pressure.
 
 **Hypothesis:** The discrepancy at 1k is actually caused by *lack of periodicity*. More specifically by the wells at the edge not having another well to interact with (we might call this "pseudo-periodicity").
-**Conclusion:** this doesn't seem to be the case! See the experiment `paramRepsQRD5` in section [[Factors affecting the diffusion coefficient of Schroeder diffusers##Panel repetitions]] on the diffusion coefficient. It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
+**Conclusion:** this doesn't seem to be the case! See the experiment `paramRepsQRD5` in section [[Factors affecting the diffusion coefficient of Schroeder diffusers#Panel repetitions]] on the diffusion coefficient. It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
 
-# Experiments
-
-## Factors affecting the diffusion coefficient
+# Factors affecting the diffusion coefficient
 
  `QR5_TMM_COMSOL`
   The original experiment which notes the discrepancy in analytical (TMM) and numerical (COMSOL) computations of the diffusion coefficient $\delta$ around the 1 kHz 3rd octave band for an $N = 5$ QRD .
@@ -40,7 +38,7 @@ Diffusion coefficient using Rayleigh Sommerfeld integral formulation compared th
 >[!Plots]-
 >![[QRD5RaylSommer_full_DC_comparison.svg]]
 
-## Agreement at 1kHz
+# Agreement at 1kHz
 
 `1kQRDagree`
 The discrepancy at 1kHz was investigated in more detail, this time by varying well widths ($7,10,15,20 \mathrm{cm}$) and observing the effect on the diffusion coefficient in the 800-1.2kHz range. The effect on scattered pressure at 1kHz of probe distance ($3,10\mathrm{m}$), and angle resolution ($181, 31 \mathrm{pts}$) was also observed:
@@ -78,7 +76,7 @@ The effect of fin width on the diffusion coefficient of an $N=5$ QRD with 7cm we
 > ![[phase 1.svg]]
 > ![[polar2k.svg]]
 
-## Panel repetitions
+# Panel repetitions
 
 `6repsQRD5`
 The effect of adding 6 panel repetitions on the scattered pressure at the design frequency of $500 \,\mathrm{Hz}$ was observed. The expected $N$ (5) far field grating lobes were observed. note that grazing angles were restricted by 5 degrees: 
@@ -96,7 +94,7 @@ This experiment studies the effect panel repetitions ($1, 2, 3, 4, 5, 6$) on the
 > ![[DCbyreps3D_TMM.svg]]
 > ![[phaseByReps.svg]]
 
-## Simulation domain considerations
+# Simulation domain considerations
 
 `QRD5CartPML`
 Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot in [[@jimenezMetadiffusersDeepsubwavelengthSound2017]]
