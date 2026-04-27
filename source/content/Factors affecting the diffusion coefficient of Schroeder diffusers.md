@@ -1,7 +1,7 @@
 Investigation with particular focus on $N=5$ QRD and the sometimes quite drastic disagreement between numerical and analytical (TMM) modelling predictions of the diffusion coefficient performance. Other quantities include the phase at the well surface and the polar distribution of scattered acoustic pressure.
 
 **Hypothesis:** The discrepancy at 1k is actually caused by *lack of periodicity*. More specifically by the wells at the edge not having another well to interact with (we might call this "pseudo-periodicity").
-**Conclusion:** this doesn't seem to be the case! See the experiment `paramRepsQRD5` in section [[Factors affecting the diffusion coefficient of Schroeder diffusers#Experiments#Panel repetitions]] on the diffusion coefficient. It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
+**Conclusion:** this doesn't seem to be the case! See the experiment `paramRepsQRD5` in section [[Factors affecting the diffusion coefficient of Schroeder diffusers##Panel repetitions]] on the diffusion coefficient. It shows that the phase agreement improves when periodicity is present, but the diffusion coefficient agreement does not.
 
 # Experiments
 
