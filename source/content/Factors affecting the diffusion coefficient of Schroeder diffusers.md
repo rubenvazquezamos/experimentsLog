@@ -23,7 +23,9 @@ A number of hypotheses were considered with the overarching goal of explaining a
 
 **Hypothesis 5:** Fin width is distorting the scattered field. **Conclusion:** It isn't. See `QRD5fins`.
 
-**Hypothesis 6** evanescent coupling could be causing the issue. **Conclusion:** Nothing conclusive but see below a plot of sound intensity and pressure at 1kHz. It seems to show the field behaving as expected:
+**Hypothesis 6:** Boundary conditions at the edge of the diffuser are the problem. A "Baffled" (flush with the PML) and diffuser extruded 30cm above the PML were compared. **Conclusion:** it makes little difference, See `UnBaffledQRD5`.
+
+**Hypothesis 7:** evanescent coupling could be causing the issue. **Conclusion:** Nothing conclusive but see below a plot of sound intensity and pressure at 1kHz. It seems to show the field behaving as expected:
 >[!Plot]-
 >![[Evanescent Coupling Detection 1.jpeg]]
 
@@ -137,6 +139,17 @@ Swapped impedance BCs with cartesian PMLs. Compared with results using different
 > See below for comparison of flat panel data
 > 
 > ![[comparisonFlat.svg]]
+
+`UnBaffledQRD5` 
+A "Baffled" (flush with the PML) and diffuser extruded 30cm above the PML were compared.
+>[!Plots]-
+>![[DC 1.svg]]
+>![[DC_norm.svg]]
+>Extruded:
+>![[geoUnbaffled.svg]]
+>"Baffled":
+>![[geoBaffled.svg]]
+## Flat panel scattering
 
 `flatPanelFarField`
 Numerical flat panel scattering as a function of domain size. Probe is 1m from domain edge at all times to avoid interference from PMLs. Panel length is approx. $1.9$ m:
