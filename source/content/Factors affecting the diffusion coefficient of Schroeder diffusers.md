@@ -1,6 +1,10 @@
 # Introduction
 
-Investigation with particular focus on $N=5$ QRD and the disagreement between numerical and analytical (TMM) predictions of the diffusion coefficient. The diffusion coefficient itself is not the only quantity considered in order to try to explain this discrepancy; other quantities include the phase at the well surface $\arg(R)$ and the polar distribution of scattered acoustic pressure, $Ps$.
+Investigation with particular focus on $N=5$ QRD and the disagreement between numerical and analytical (TMM) predictions of the diffusion coefficient. This was noticed for the first time in the experiment `QR5_TMM_COMSOL`. This is the original experiment which notes the discrepancy in analytical (TMM) and numerical (COMSOL) computations of the diffusion coefficient $\delta$ around the 1 kHz 3rd octave band for an $N = 5$ QRD :
+
+![[QR5_TMM_COMSOL.svg]]
+
+The diffusion coefficient itself is not the only quantity considered in order to try to explain this discrepancy; other quantities include the phase at the well surface $\arg(R)$ and the polar distribution of scattered acoustic pressure, $Ps$.
 # Experiments
 
 A number of hypotheses were considered with the overarching goal of explaining and/or fixing the discrepancy in the 1/3rd octave band centered at 1kHz. The first key observation was that we CAN make the models agree if the well width is sufficiently wide. See `1kQRDagree`. This still unexplained observation led to the hypotheses around panel repetitions and the accuracy of the flat panel models. Below is the list of hypotheses tested so far:
@@ -29,12 +33,6 @@ A number of hypotheses were considered with the overarching goal of explaining a
 >![[Evanescent Coupling Detection 1.jpeg]]
 
 ## Analytical Diffusion Coefficient
-
- `QR5_TMM_COMSOL`
-  The original experiment which notes the discrepancy in analytical (TMM) and numerical (COMSOL) computations of the diffusion coefficient $\delta$ around the 1 kHz 3rd octave band for an $N = 5$ QRD .
-
-> [!Plots]-
-> ![[QR5_TMM_COMSOL.svg]]
 
 `QR5_radcorr`
 The first thought was maybe radiation corrections could have been influencing the TMM $\delta$, so the two conditions were compared:
