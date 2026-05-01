@@ -29,6 +29,7 @@ A number of hypotheses were considered with the overarching goal of explaining a
 >[!Plot]-
 >![[Evanescent Coupling Detection 1.jpeg]]
 
+**Hypothesis 8:** The model is not "tuned" correctly. Small discrepancies might be adding up. **Conclusion:** the scattered pressure plots were matched very closely to those in Jiménez et al 2017 and this was found to not fix the issue. See the section *Tuning*.
 ## Analytical Diffusion Coefficient
 
 `QR5_radcorr`
@@ -167,3 +168,20 @@ Same as above but with 50m domain size to check convergence to far field pattern
 TMM Flat panel scattering using Rayleigh Sommerfeld integral compared with far field formulation (Fraunhofer integral). Indicates that much of the changes in polar pattern with distance can be accounted for by using the right scattering integral.
 >[!Plot]-
 >![[RSfarfield2_comparison.svg]]
+
+## Tuning
+
+`QRD5Noe`
+
+The scattered pressure field shown in figure 3(e) of Jiménez et al. (2017) was not exactly matching my model. Jiménez used 7 panel repetitions. Matching of figure 3(e) in Jiménez et al. (2017) was carried out by tuning $Ps$ as function of $\epsilon_{fin}$ , $W$ etc. The settings were reverse engineered to be $\epsilon_{fin} \approx 1$ mm $W \approx 6$ cm and  $2\epsilon_{stock} = 2\epsilon_{fin}$ . See pdf for full set of comparisons:
+
+>[!pdf]-
+>NOTE: pdf doesn't display correctly in Obsidian. Download the file to view properly
+>![[e_fin and W.pdf]]
+>Animation of $Ps(W)$:
+>![[e_fin1.gif]]
+
+Then, using the obtained settings, a parametric study of $\delta$ and $\delta_n$ as a function of $W$ was performed:
+>[!Plot]-
+>![[DC_comparisonQRD5Noe.svg]]
+>![[DCnorm_comparisonQRD5Noe.svg]]
