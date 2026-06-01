@@ -1,11 +1,12 @@
-# Introduction
+# 1. Introduction
 
 Investigation with particular focus on $N=5$ QRD and the disagreement between numerical and analytical (TMM) predictions of the diffusion coefficient. This was noticed for the first time in the experiment `QR5_TMM_COMSOL`. This is the original experiment which notes the discrepancy in analytical (TMM) and numerical (COMSOL) computations of the diffusion coefficient $\delta$ around the 1 kHz 3rd octave band for an $N = 5$ QRD :
 
 ![[QR5_TMM_COMSOL.svg]]
 
 The diffusion coefficient itself is not the only quantity considered in order to try to explain this discrepancy; other quantities include the phase at the well surface $\arg(R)$ and the polar distribution of scattered acoustic pressure, $Ps$.
-# Experiments
+
+# 2. Experiments
 
 A number of hypotheses were considered with the overarching goal of explaining and/or fixing the discrepancy in the 1/3rd octave band centered at 1kHz. The first key observation was that we CAN make the models agree if the well width is sufficiently wide. See `1kQRDagree`. This still unexplained observation led to the hypotheses around panel repetitions and the accuracy of the flat panel models. Below is the list of hypotheses tested so far:
 
@@ -26,10 +27,12 @@ A number of hypotheses were considered with the overarching goal of explaining a
 **Hypothesis 6:** Boundary conditions at the edge of the diffuser are the problem. A "Baffled" (flush with the PML) and diffuser extruded 30cm above the PML were compared. **Conclusion:** it makes little difference, See `UnBaffledQRD5`.
 
 **Hypothesis 7:** evanescent coupling could be causing the issue. **Conclusion:** Nothing conclusive but see below a plot of sound intensity and pressure at 1kHz. It seems to show the field behaving as expected:
->[!Plot]-
->![[Evanescent Coupling Detection 1.jpeg]]
+
+> [!Plot]-
+> ![[Evanescent Coupling Detection 1.jpeg]]
 
 **Hypothesis 8:** The model is not "tuned" correctly. Small discrepancies might be adding up. **Conclusion:** the scattered pressure plots were matched very closely to those in Jiménez et al 2017 and this was found to not fix the issue. See the section *Tuning*.
+
 ## Analytical Diffusion Coefficient
 
 `QR5_radcorr`
@@ -56,8 +59,9 @@ The TMM model was considered good enough for the time being.
 
 `QRD5RaylSommer_full`
 Diffusion coefficient using Rayleigh Sommerfeld integral formulation compared those obtained using Fraunhofer integral. Results are similar:
->[!Plots]-
->![[QRD5RaylSommer_full_DC_comparison.svg]]
+
+> [!Plots]-
+> ![[QRD5RaylSommer_full_DC_comparison.svg]]
 
 ## Agreement at 1kHz
 
@@ -123,13 +127,11 @@ Swapped impedance BCs with cartesian PMLs. Scattered pressure compared to plot i
 > [!Plot]-
 > ![[Pasted image 20260313145757.png]]
 
-
 `7repsPsHeatmap`
 Used 7 periods of QRD instead of 6 to compare like-for-like with [[@jimenezMetadiffusersDeepsubwavelengthSound2017]] (it seems 7 periods are being used in the paper).
 
 > [!Plot]-
 > ![[7repPsHeatmap.png]]
-
 
 `CartPML_full`
 Swapped impedance BCs with cartesian PMLs. Compared with results using different simulation boundary conditions. The effect on flat panel simulations was also considered and compared to TMM results. There are some differences at low frequencies.
@@ -143,13 +145,15 @@ Swapped impedance BCs with cartesian PMLs. Compared with results using different
 
 `UnBaffledQRD5` 
 A "Baffled" (flush with the PML) and diffuser extruded 30cm above the PML were compared.
->[!Plots]-
->![[DC 1.svg]]
->![[DC_norm.svg]]
->Extruded:
->![[geoUnbaffled.svg]]
->"Baffled":
->![[geoBaffled.svg]]
+
+> [!Plots]-
+> ![[DC 1.svg]]
+> ![[DC_norm.svg]]
+> Extruded:
+> ![[geoUnbaffled.svg]]
+> "Baffled":
+> ![[geoBaffled.svg]]
+
 ## Flat panel scattering
 
 `flatPanelFarField`
@@ -166,8 +170,9 @@ Same as above but with 50m domain size to check convergence to far field pattern
 
 `RSfarfield2`
 TMM Flat panel scattering using Rayleigh Sommerfeld integral compared with far field formulation (Fraunhofer integral). Indicates that much of the changes in polar pattern with distance can be accounted for by using the right scattering integral.
->[!Plot]-
->![[RSfarfield2_comparison.svg]]
+
+> [!Plot]-
+> ![[RSfarfield2_comparison.svg]]
 
 ## Tuning
 
@@ -175,13 +180,14 @@ TMM Flat panel scattering using Rayleigh Sommerfeld integral compared with far f
 
 The scattered pressure field shown in figure 3(e) of Jiménez et al. (2017) was not exactly matching my model. Jiménez used 7 panel repetitions. Matching of figure 3(e) in Jiménez et al. (2017) was carried out by tuning $Ps$ as function of $\epsilon_{fin}$ , $W$ etc. The settings were reverse engineered to be $\epsilon_{fin} \approx 1$ mm $W \approx 6$ cm and  $2\epsilon_{stock} = 2\epsilon_{fin}$ . See pdf for full set of comparisons:
 
->[!pdf]-
->NOTE: pdf doesn't display correctly in Obsidian. Download the file to view properly
->![[e_fin and W.pdf]]
->Animation of $Ps(W)$:
->![[e_fin1.gif]]
+> [!pdf]-
+> NOTE: pdf doesn't display correctly in Obsidian. Download the file to view properly
+> ![[e_fin and W.pdf]]
+> Animation of $Ps(W)$:
+> ![[e_fin1.gif]]
 
 Then, using the obtained settings, a parametric study of $\delta$ and $\delta_n$ as a function of $W$ was performed:
->[!Plot]-
->![[DC_comparisonQRD5Noe.svg]]
->![[DCnorm_comparisonQRD5Noe.svg]]
+
+> [!Plot]-
+> ![[DC_comparisonQRD5Noe.svg]]
+> ![[DCnorm_comparisonQRD5Noe.svg]]

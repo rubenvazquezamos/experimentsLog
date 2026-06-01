@@ -14,8 +14,9 @@
               "type": "markdown",
               "state": {
                 "file": "Factors affecting the diffusion coefficient of Schroeder diffusers.md",
-                "mode": "preview",
-                "source": false
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Factors affecting the diffusion coefficient of Schroeder diffusers"
@@ -78,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.49999618530273,
-    "collapsed": true
+    "width": 403.49999618530273
   },
   "right": {
     "id": "ba1ec06a672fb227",
