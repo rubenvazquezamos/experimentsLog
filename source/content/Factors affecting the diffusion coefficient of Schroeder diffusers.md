@@ -174,7 +174,7 @@ TMM Flat panel scattering using Rayleigh Sommerfeld integral compared with far f
 > [!Plot]-
 > ![[RSfarfield2_comparison.svg]]
 
-## Tuning
+## Benchmarking
 
 `QRD5Noe`
 
@@ -191,3 +191,17 @@ Then, using the obtained settings, a parametric study of $\delta$ and $\delta_n$
 > [!Plot]-
 > ![[DC_comparisonQRD5Noe.svg]]
 > ![[DCnorm_comparisonQRD5Noe.svg]]
+
+`QRD5CircularDomain_full`
+
+Very good agreement reached with BEM results obtained using AFMG reflex software.
+
+> [!Plot]-
+> ![[DC_QRD5CircularDomain_full.svg]]
+
+`QRDHiResLH`
+
+A different FEM model, this time for an $N=7$ QRD was compared to the COMSOL FEM results with $\mathrm{df} = 10Hz$. Good agreement with general contour achieved despite slight scaling discrepancies:
+
+> [!Plot]-
+> ![[ANONDCnorm3repsComparisonQRDHisResLH.svg]]
